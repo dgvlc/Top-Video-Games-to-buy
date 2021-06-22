@@ -12,24 +12,7 @@ My project would be about creating a website where you can get a recomendation o
 
 The API that's going to be used is from giant bomb and the specific info that I need from it is the Title, image, game rating, brief description and genre.
 https://www.giantbomb.com/api/documentation/#toc-0-16 
-head><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey: "NRBR-a22c617a7b2aab2da1c",applicationID: "574211123"
-};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n
-        ]){var i=e[n
-            ]={exports: {}
-            };t[n
-            ][
-                0
-            ].call(i.exports,function(e){var i=t[n
-                ][
-                    1
-                ][e
-                ];return r(i||e)
-            },i,i.exports)
-        }return e[n
-        ].exports
-    }if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i
-    ]);return r
-}
+
 
 ## Wireframes
 https://wireframe.cc/pro/pp/b2396ea81452387
@@ -80,7 +63,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | construct frame| H | 4hrs| 4.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| get top ten | H | 5 |  | :---: |
+| render image | M |  5 | :---: | :---: |
+| create genre option list | H |  4 | :---: | :---: |
+| create page with top list | H |  5 | :---: | :---: |
+| style genre list | M |  4 | :---: | :---: |
+| style top list | M |  3 | :---: | :---: |
+| get brief descripion of game| L |  3 | :---: | :---: |
+| show multiple ratings | L |  4 | :---: | :---: |
+| Total | H | 40hrs| 40hrs | 5hrs |
 
 ## Code Snippet
 
