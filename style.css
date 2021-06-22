@@ -1,0 +1,10 @@
+* {
+background-color: cadetblue;
+}
+
+.container-list {
+  background-color:gainsboro;
+  display: inline-block;
+  width: 100% auto;
+  padding: 300px;
+}
