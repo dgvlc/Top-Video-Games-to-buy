@@ -13,6 +13,31 @@ My project would be about creating a website where you can get a recomendation o
 The API that's going to be used is from giant bomb and the specific info that I need from it is the Title, image, game rating, brief description and genre.
 https://www.giantbomb.com/api/documentation/#toc-0-16 
 
+```
+"dlc": null,
+            "dlc_name": null,
+            "game": {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-51742/",
+                "id": 51742,
+                "name": "Rez Infinite",
+                "site_detail_url": "https://www.giantbomb.com/rez-infinite/3030-51742/"
+            },
+            "guid": "1900-799",
+            "id": 799,
+            "publish_date": "2020-10-12 22:02:00",
+            "release": {
+                "api_detail_url": "https://www.giantbomb.com/api/release/3050-175591/",
+                "id": 175591,
+                "name": "Rez Infinite"
+            },
+            "reviewer": "Jeff",
+            "score": 5,
+            "site_detail_url": "https://www.giantbomb.com/reviews/rez-infinite-review/1900-799/",
+            "platforms": "Oculus Quest"
+        },
+        
+       
+```
 
 ## Wireframes
 https://wireframe.cc/pro/pp/b2396ea81452387
@@ -24,16 +49,14 @@ https://wireframe.cc/pro/pp/b2396ea81452387
 #### MVP 
 
 - use external api to get video game title 
-- separate video-games by genre 
-- render genre intro page for top games                                                                                             
-- find and use api to get game rating                                                                                                                                                                                          
-- click genre and render top games based by game rating 
+- use api to get score and get the top ten 
+- render video games image                                                                                             
+- render details about games                                                                                                                                                                                      
 
 #### PostMVP  
 
-- style top video game genres options 
-- style the top video game list                                                                                              
-- use api to get brief description of games 
+- style top video game list 
+- generate random top ten list                                                                                              
 
 ## Project Schedule
 
@@ -63,11 +86,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | construct frame| H | 4hrs| 4.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| get top ten | H | 5 |  | :---: |
+| get top ten | M | 5 |  | :---: |
 | render image | M |  5 | :---: | :---: |
-| create genre option list | H |  4 | :---: | :---: |
+| get the review score | H |  4 | :---: | :---: |
 | create page with top list | H |  5 | :---: | :---: |
-| style genre list | M |  4 | :---: | :---: |
+| render details | M |  4 | :---: | :---: |
 | style top list | M |  3 | :---: | :---: |
 | get brief descripion of game| L |  3 | :---: | :---: |
 | show multiple ratings | L |  4 | :---: | :---: |
