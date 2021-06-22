@@ -6,7 +6,7 @@ Top Video Games To Buy
 
 ## Project Description
 
-My project would be about creating a website where you can get a recomendation of the top video games by using their game rating and they will be separated by genre.
+My project would be about creating a website where you can get a recomendation of the top video games by using their game rating and get more a bit of info about each game and based your decision on that.
 
 ## API and Data Sample
 
@@ -42,7 +42,7 @@ https://www.giantbomb.com/api/documentation/#toc-0-16
 ## Wireframes
 https://wireframe.cc/pro/pp/b2396ea81452387
                                                                                              
-![Wireframe](/Users/diego/general_assembly/sei/unit_1/week_3/project1/Top-Video-Games----Wireframe-cc-Premium/Homepage.png)                                                                                             
+![Layout](https://user-images.githubusercontent.com/38265711/122980565-cc247b80-d366-11eb-939f-27d2e79d3f79.png)                                                                                       
 
 ### MVP/PostMVP
 
@@ -56,6 +56,7 @@ https://wireframe.cc/pro/pp/b2396ea81452387
 #### PostMVP  
 
 - style top video game list 
+- seperate by genre 
 - generate random top ten list                                                                                              
 
 ## Project Schedule
@@ -73,6 +74,8 @@ https://wireframe.cc/pro/pp/b2396ea81452387
 ## Priority Matrix
 
 https://wireframe.cc/pro/pp/60e2d4929452532
+
+![Graph](https://user-images.githubusercontent.com/38265711/122980721-ff670a80-d366-11eb-813e-c2e4b2b0d14a.png)
                                                                                              
                                                                                              
 
@@ -86,14 +89,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | construct frame| H | 4hrs| 4.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| get top ten | M | 5 |  | :---: |
-| render image | M |  5 | :---: | :---: |
-| get the review score | H |  4 | :---: | :---: |
-| create page with top list | H |  5 | :---: | :---: |
-| render details | M |  4 | :---: | :---: |
-| style top list | M |  3 | :---: | :---: |
-| get brief descripion of game| L |  3 | :---: | :---: |
-| show multiple ratings | L |  4 | :---: | :---: |
+| get top ten | M | 5hrs | :---: | :---: |
+| render image | M |  5hrs | :---: | :---: |
+| get the review score | H |  4hrs | :---: | :---: |
+| create page with top list | H |  5hrs | :---: | :---: |
+| render details | M |  4hrs | :---: | :---: |
+| style top list | M |  3hrs | :---: | :---: |
+| get brief descripion of game| L |  3hrs | :---: | :---: |
+| separate by genre and show multiple review scores | L |  4hrs | :---: | :---: |
 | Total | H | 40hrs| 40hrs | 5hrs |
 
 ## Code Snippet
