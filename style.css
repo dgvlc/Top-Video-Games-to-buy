@@ -5,6 +5,23 @@ background-color: cadetblue;
 .container-list {
   background-color:gainsboro;
   display: inline-block;
-  width: 100% auto;
+  width: 100%;
   padding: 300px;
+}
+
+#list-generator {
+  padding: 20px;
+  width: 30%;
+}
+#title {
+  color: #302c57;
+  text-shadow: 
+  0 0 10px #302c57,
+  0 0 15px #302c57,
+  0 0 34px #302c57,
+  0 0 40px darkblue,
+  0 0 57px darkblue,
+  0 0 80px darkblue,
+  0 0 100px darkblue ;
+
 }
