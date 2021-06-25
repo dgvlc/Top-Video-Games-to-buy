@@ -2,11 +2,20 @@
 background-color: cadetblue;
 }
 
+.container {
+  padding: 50px;
+  margin: 5%;
+  width: 300px;
+  height: 300px;
+}
 .container-list {
   background-color:gainsboro;
-  display: inline-block;
-  width: 100%;
-  padding: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 50px;
+  margin: auto;
+  justify-content: center;
 }
 
 #list-generator {
@@ -24,4 +33,14 @@ background-color: cadetblue;
   0 0 80px darkblue,
   0 0 100px darkblue ;
 
+}
+.name-header {
+  padding: 20px;
+  width: 40%;
+  color: tomato;
+
+}
+
+.holder {
+  text-align: center;
 }
