@@ -15,7 +15,7 @@ const videoGamesStarter = async () => {
     // console.log(response.data.results)
     const data = response.data.results
     
-  
+  // this lets you sort the games and it picks only the ones that scored 5 
       let sortArray = data.sort((a, b) => b.score - a.score).slice(0, 10)
      // console.log(sortArray)
     for (i = 0; i < sortArray.length; i++) {
@@ -26,7 +26,7 @@ const videoGamesStarter = async () => {
     console.log(error)
   }
 }
-
+//this lets you render the game info by asking another api to get the data
 async function renderGames(game, square) {
  // console.log(square)
   //console.log(results.game.api_detail_url)
@@ -39,7 +39,7 @@ async function renderGames(game, square) {
     const response = await axios.get(imageGet)
     currentGame = response.data.results
     //console.log('game', currentGame)
-    
+    // this creates the elements to display the info
     let gameData = `
   <h1 id="game-title" >${currentGame.name}</h1>
   <img src="${currentGame.image.original_url}" class="game-image"/>
@@ -57,15 +57,15 @@ async function renderGames(game, square) {
 } catch (error) {
   console.log(error)
 }  
- }
-  
+}
+ //this removes the initial containers for the games 
 function removeMystery() {
   for (let i = 0; i < container.length; i++)
   {
     holders[i].remove()
     }
 }
-
+//this makes the button clicklabe to get the info, remove initial containers.
 document.getElementById("list-generator").addEventListener('click', (e) => {
   e.preventDefault()
   removeMystery()
