@@ -4,6 +4,7 @@
 
 Top Video Games To Buy 
 
+https://dgvlc.github.io/Top-Video-Games-to-buy/
 ## Project Description
 
 My project would be about creating a website where you can get a recomendation of the top video games by using their game rating and get more a bit of info about each game and based your decision on that.
