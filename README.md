@@ -10,7 +10,7 @@ My project would be about creating a website where you can get a recomendation o
 
 ## API and Data Sample
 
-The API that's going to be used is from giant bomb and the specific info that I need from it is the Title, image, game rating, brief description and genre.
+The API that's going to be used is from giant bomb and the specific info that I need from it is the Title, image, game review's score, brief description and genre.
 https://www.giantbomb.com/api/documentation/#toc-0-16 
 
 ```
@@ -55,7 +55,8 @@ https://wireframe.cc/pro/pp/b2396ea81452387
 
 #### PostMVP  
 
-- style top video game list 
+- style top video game list
+- put starting image  
 - seperate by genre 
 - generate random top ten list                                                                                              
 
@@ -81,9 +82,6 @@ https://wireframe.cc/pro/pp/60e2d4929452532
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -101,24 +99,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 ## Code Snippet 
 
 ```
-const videoGamesStarter = async () => {
-  try {
+ let gameData = `
+  <h1 id="game-title" >${currentGame.name}</h1>
+  <img src="${currentGame.image.original_url}" class="game-image"/>
+  <h3>Genre: ${currentGame.genres[0].name}</h3>
+  `
+    square.insertAdjacentHTML('beforeend', gameData)
 
-    const response = await axios.get(reviewUrl)
-    // console.log(response.data.results)
-    const data = response.data.results
-    
-  
-      let sortArray = data.sort((a, b) => b.score - a.score).slice(0, 10)
-     // console.log(sortArray)
-    for (i = 0; i < sortArray.length; i++) {
-      renderGames(sortArray[i], container[i])
-    }
-
-  } catch (error) {
-    console.log(error)
-  }
-}
+    const descP = document.createElement('p')
+    descP.classList.add('description')
+    descP.textContent = currentGame.deck
+    square.append(descP)
 
 
 ```
