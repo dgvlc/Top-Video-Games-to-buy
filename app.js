@@ -41,17 +41,18 @@ async function renderGames(game, square) {
     const response = await axios.get(imageGet)
     currentGame = response.data.results
     console.log('game', currentGame)
-
-    // nameDiv.innerText = currentGame.name
-    // container.style.backgroundImage = 'url(' + currentGame.image.icon_url + ')'
     
     let gameData = `
-  <h1>Title: ${currentGame.name}</h1>
-  <img src="${currentGame.image.icon_url}" class="game-image"/>
-
+  <h1 id="game-title" >${currentGame.name}</h1>
+  <img src="${currentGame.image.original_url}" class="game-image"/>
   <h3>Genre: ${currentGame.genres[0].name}</h3>
   `
     square.insertAdjacentHTML('beforeend', gameData)
+
+    const descP = document.createElement('p')
+    descP.classList.add('description')
+    descP.textContent = currentGame.deck
+    square.append(descP)
 
   
 
@@ -73,10 +74,6 @@ document.getElementById("list-generator").addEventListener('click', (e) => {
   videoGamesStarter()
 })
 
-// const imgClick = renderGames.gameData
 
-// imgClick.addEventListener('click', (e) => {
-//   e.preventDefault()
 
-// })
 

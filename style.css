@@ -1,15 +1,39 @@
 * {
-background-color: cadetblue;
+background-color: #12343b;
+}
+body {
+}
+button {
+position: relative;
+background-color: #e1b382;
+border: 2px solid black;
+font-size: 100%;
+margin:30px; 
+left: 10%;
+}
+h1, h3 , button, .description{
+  font-style: oblique;
+}
+button:hover {
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) ;
+}
+
+h3 {
+  background-color: #2d545e;
+  margin: 0px;
+  
+
 }
 
 .container {
-  padding: 50px;
+  display: inline-table;
+  padding: 0;
   margin: 5%;
   width: 300px;
   height: 300px;
 }
 .container-list {
-  background-color:gainsboro;
+  background-color: #c89666;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -18,11 +42,20 @@ background-color: cadetblue;
   justify-content: center;
 }
 
+.description {
+  box-shadow:10px 5px 5px  black;
+  background-color: rgb(235, 229, 229);
+  border: 2px solid black;
+}
 #list-generator {
   padding: 20px;
   width: 30%;
+
 }
 #title {
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
   color: #fcfcfc;
   text-shadow: 
   0 0 10px #fcfcfc,
@@ -34,13 +67,33 @@ background-color: cadetblue;
   0 0 100px darkblue ;
 
 }
-.name-header {
-  padding: 20px;
-  width: 40%;
-  color: tomato;
-
+#game-title {
+  margin: 0px;
+  background-color: #e1b382;
+}
+@media screen and (max-width: 600px ) {
+  #game-title {
+    font-size: 50px;
+    background-color: darkred;
+    color: ivory;
+  }
+  
 }
 
 .holder {
   text-align: center;
+  height: 300px;
+  font-size: 200px;
+}
+
+.game-image {
+
+  box-shadow:10px 5px 5px  black;
+  max-width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: inherit;
+
+
 }
