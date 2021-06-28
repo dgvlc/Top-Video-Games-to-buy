@@ -87,25 +87,41 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| construct frame| H | 4hrs| 4.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| get top ten | M | 5hrs | :---: | :---: |
-| render image | M |  5hrs | :---: | :---: |
-| get the review score | H |  4hrs | :---: | :---: |
-| create page with top list | H |  5hrs | :---: | :---: |
-| render details | M |  4hrs | :---: | :---: |
-| style top list | M |  3hrs | :---: | :---: |
-| get brief descripion of game| L |  3hrs | :---: | :---: |
-| separate by genre and show multiple review scores | L |  4hrs | :---: | :---: |
-| Total | H | 40hrs| 40hrs | 5hrs |
+| construct frame| H | 4hrs| 4hrs | 4.5hrs |
+| Working with API | H | 3hrs| 4hrs | 5hrs |
+| get top ten | M | 5hrs | 5hrs | 5hrs |
+| render image | M |  5hrs | 5hrs | 4.5hrs |
+| get the review score | H |  5hrs | 3hrs | 3hrs|
+| create page with top list | H |  5hrs | 5hrs| 5hrs |
+| render details | M |  5hrs | 3hrs | 3.5hrs |
+| style top list | M |  4hrs | 5hrs | 5hrs |
+| get brief descripion of game| L |  4hrs | 3hrs | 3.5hrs |
+| Total | H | 40hrs| 40hrs | 39hrs |
 
-## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+## Code Snippet 
 
 ```
+const videoGamesStarter = async () => {
+  try {
+
+    const response = await axios.get(reviewUrl)
+    // console.log(response.data.results)
+    const data = response.data.results
+    
+  
+      let sortArray = data.sort((a, b) => b.score - a.score).slice(0, 10)
+     // console.log(sortArray)
+    for (i = 0; i < sortArray.length; i++) {
+      renderGames(sortArray[i], container[i])
+    }
+
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ Had to move away from selecting from genre.
