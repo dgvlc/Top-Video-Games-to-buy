@@ -1,14 +1,12 @@
 
-const api = '?api_key=dafa211aea44c6db2e94a706b672a5af7ce923e6&format=json'
+ const api = '?api_key=dafa211aea44c6db2e94a706b672a5af7ce923e6&format=json'
  const reviewUrl = 'https://floating-escarpment-65266.herokuapp.com/www.giantbomb.com/api/reviews/?api_key=dafa211aea44c6db2e94a706b672a5af7ce923e6&format=json'
-// const searchUrl = 'https://floating-escarpment-65266.herokuapp.com/www.giantbomb.com/api/search/?api_key=dafa211aea44c6db2e94a706b672a5af7ce923e6&format=json'
  const baseUrl = 'https://floating-escarpment-65266.herokuapp.com/www.giantbomb.com/api/games/?api_key=dafa211aea44c6db2e94a706b672a5af7ce923e6&format=json'
 
 const containerList = document.querySelector(".container-list")
 const container = document.querySelectorAll('.container')
 const holders = document.querySelectorAll('.holder')
-const nameDiv = document.querySelectorAll('.name-header')
-const descDiv = document.querySelectorAll('.desc-footer')
+
 
 const videoGamesStarter = async () => {
   try {
@@ -30,7 +28,7 @@ const videoGamesStarter = async () => {
 }
 
 async function renderGames(game, square) {
-  console.log(square)
+ // console.log(square)
   //console.log(results.game.api_detail_url)
   const gameUrl = game.game.api_detail_url
   const imageGet = `https://floating-escarpment-65266.herokuapp.com/${gameUrl}${api}`
@@ -40,7 +38,7 @@ async function renderGames(game, square) {
   try {
     const response = await axios.get(imageGet)
     currentGame = response.data.results
-    console.log('game', currentGame)
+    //console.log('game', currentGame)
     
     let gameData = `
   <h1 id="game-title" >${currentGame.name}</h1>

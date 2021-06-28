@@ -94,6 +94,11 @@ h3 {
   background-position: center;
   background-attachment: fixed;
   margin: inherit;
+}
 
-
+@media screen and (max-width:600px) {
+ .game-image{
+  margin: auto;
+  box-shadow: none;
+ }
 }
